@@ -24,6 +24,7 @@
 
         & ul li a {
             color: $color-white;
+            font-size: 1.8rem;
             text-decoration: none;
             position: relative;
         }
@@ -63,8 +64,16 @@
 
     &_image img{
         border-radius: 50%;
-        width: 40rem;
+        width: 39rem;
         border: .8rem solid $color-primary;
+        animation-name: moveInImage;
+        animation-duration: 2s;
+        animation-timing-function: ease-out;
+        transition: transform .7s ease-in-out;
+
+        &:hover {
+            transform: rotate(360deg);
+          }
     }
 }
 
@@ -77,7 +86,7 @@
         font-size: 6rem;
         font-weight: 900;
         color: $color-primary;
-        letter-spacing: 1.5rem;
+        letter-spacing: 1rem;
         text-transform: uppercase;
     
         animation-name: moveInLeft;
@@ -87,9 +96,9 @@
     
     &-sub {
         display: block;
-        font-size: 2.5rem;
-        font-weight: 600;
-        letter-spacing: .7rem;
+        font-size: 2rem;
+        font-weight: 500;
+        letter-spacing: .2rem;
         animation: moveInRight 2s ease-out;
     }
 }

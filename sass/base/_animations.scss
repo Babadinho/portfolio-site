@@ -22,10 +22,10 @@
     }
 }
 
-@keyframes moveInButton {
+@keyframes moveInImage {
     0% {
         opacity: 0;
-        transform: translateY(3rem)
+        transform: translateY(-10rem)
     }
 
     100% {
@@ -34,10 +34,10 @@
     }
 }
 
-@keyframes moveInCard {
+@keyframes moveInButton {
     0% {
         opacity: 0;
-        transform: translateY(1rem)
+        transform: translateY(3rem)
     }
 
     100% {

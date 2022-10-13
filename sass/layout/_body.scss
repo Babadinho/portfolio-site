@@ -2,44 +2,46 @@
     padding: 1rem 10%;
 
     .skills {
-        margin-bottom: 7rem;
+        margin-bottom: 15rem;
 
         &_title {
             color: $color-white;
-            margin-bottom: 2rem;
+            margin-bottom: 3rem;
+            font-size: 3rem;
 
             & span {
-                border-bottom: .8rem solid $color-primary-dark;
+                border-bottom: .6rem solid $color-primary;
             }
         }
 
         &_list {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 5rem;
             color: $color-white;
 
             &_title {
                 display: flex;
                 justify-content: center;
-                font-size: 2.5rem;
+                font-size: 2.3rem;
                 font-weight: 600;
                 padding-bottom: 1rem;
                 letter-spacing: .1rem;
 
                 & p {
-                    border-bottom: .2rem solid $color-primary-dark;
+                    border-bottom: .2rem solid $color-primary;
                 }
             }
 
             &_frontend {
                 padding: 1rem;
-                width: 37vw;
-                border: .2rem solid $color-white;
-                box-shadow: 10px 10px $color-white;
+                background: #232936d6;
+                border-radius: 1rem;
+                box-shadow: 10px 10px $color-primary;
 
                 &:hover {
-                    transform: translateY(-.3rem);
+                    transform: translateY(-.5rem);
+                    transition: all .5s;
             
                     &::after {
                         transform: scaleX(1.4) scaleY(1.6);
@@ -54,12 +56,14 @@
 
             &_backend {
                 padding: 1rem;
-                width: 37vw;
-                border: .2rem solid $color-white;
-                box-shadow: 10px 10px $color-white;
+                border-radius: 1rem;
+                background: #232936d6;
+                // border: .2rem solid $color-white;
+                box-shadow: 10px 10px $color-primary;
 
                 &:hover {
-                    transform: translateY(-.3rem);
+                    transform: translateY(-.5rem);
+                    transition: all .5s;
             
                     &::after {
                         transform: scaleX(1.4) scaleY(1.6);
@@ -82,7 +86,7 @@
                     display: flex;
                     align-items: center;
                     padding-bottom: .8rem;
-                    font-size: 2rem;
+                    font-size: 1.7rem;
                 }
 
                 &_img {
@@ -98,14 +102,90 @@
 
 
     .portfolio {
-        margin-bottom: 7rem;
+        margin-bottom: 10rem;
         
         &_title {
             color: $color-white;
-            margin-bottom: 2rem;
+            margin-bottom: 3rem;
 
             & span {
-                border-bottom: .8rem solid $color-primary-dark;
+                border-bottom: .6rem solid $color-primary;
+            }
+        }
+
+        &_list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-gap: 4rem;
+            color: $color-white;
+
+            &_item {
+                border-radius: 1rem;
+                position: relative;
+                overflow: hidden;
+
+                &:hover img{
+                    transform: scale(1.1);
+                }
+
+                & img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 1rem;
+                    display: block;
+                    transition: transform 0.5s;
+                }
+
+                &_layer {
+                    width: 100%;
+                    height: 0;
+                    background: linear-gradient(rgba(0, 0, 0, 0.6), $color-primary);
+                    border-radius: 1rem;
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    overflow: hidden;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    padding: 0 2rem;
+                    text-align: center;
+                    font-size: 1.5rem;
+                    transition: height 0.5s;
+
+                    & h3 {
+                        font-weight: 600;
+                        margin-bottom: 2rem;
+                    }
+
+                    & span {
+                        display: flex;
+                    }
+
+                    & span div {
+                       margin-top: 2rem;
+                       margin-right: 1rem;
+                       font-size: 1.8rem;
+                       line-height: 4rem;
+                       background: #fff;
+                       width: 4rem;
+                       height: -4rem;
+                       border-radius: 50%;
+                       text-align: center;
+
+                       & a {
+                        color: $color-primary-dark;
+                        text-decoration: none;
+                       }
+                    }
+                }
+
+                &:hover {
+                    .portfolio_list_item_layer {
+                        height: 100%;
+                    }
+                }
             }
         }
     }
