@@ -17,7 +17,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            color: $color-black;
+            color: $color-white;
 
             &_title {
                 display: flex;
@@ -35,9 +35,8 @@
             &_frontend {
                 padding: 1rem;
                 width: 37vw;
-                border-radius: 1rem;
-                background-color: $color-white;
-                border: .4rem solid $color-primary-dark;
+                border: .2rem solid $color-white;
+                box-shadow: 10px 10px $color-white;
 
                 &:hover {
                     transform: translateY(-.3rem);
@@ -56,9 +55,8 @@
             &_backend {
                 padding: 1rem;
                 width: 37vw;
-                border-radius: 1rem;
-                background-color: $color-white;
-                border: .4rem solid $color-primary-dark;
+                border: .2rem solid $color-white;
+                box-shadow: 10px 10px $color-white;
 
                 &:hover {
                     transform: translateY(-.3rem);
