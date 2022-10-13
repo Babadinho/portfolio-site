@@ -1,0 +1,114 @@
+.container {
+    padding: 1rem 10%;
+
+    .skills {
+        margin-bottom: 7rem;
+
+        &_title {
+            color: $color-white;
+            margin-bottom: 2rem;
+
+            & span {
+                border-bottom: .8rem solid $color-primary-dark;
+            }
+        }
+
+        &_list {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: $color-black;
+
+            &_title {
+                display: flex;
+                justify-content: center;
+                font-size: 2.5rem;
+                font-weight: 600;
+                padding-bottom: 1rem;
+                letter-spacing: .1rem;
+
+                & p {
+                    border-bottom: .2rem solid $color-primary-dark;
+                }
+            }
+
+            &_frontend {
+                padding: 1rem;
+                width: 37vw;
+                border-radius: 1rem;
+                background-color: $color-white;
+                border: .4rem solid $color-primary-dark;
+
+                &:hover {
+                    transform: translateY(-.3rem);
+            
+                    &::after {
+                        transform: scaleX(1.4) scaleY(1.6);
+                        opacity: 0;
+                    }
+                }
+            
+                &:active {
+                    transform: translateY(-.1rem);
+                }
+            }
+
+            &_backend {
+                padding: 1rem;
+                width: 37vw;
+                border-radius: 1rem;
+                background-color: $color-white;
+                border: .4rem solid $color-primary-dark;
+
+                &:hover {
+                    transform: translateY(-.3rem);
+            
+                    &::after {
+                        transform: scaleX(1.4) scaleY(1.6);
+                        opacity: 0;
+                    }
+                }
+            
+                &:active {
+                    transform: translateY(-.1rem);
+                }
+            }
+
+            &_items {
+                display: grid;
+                grid-template-columns: auto auto;
+                justify-content: space-around;
+                padding: 1rem;
+
+                &_div {
+                    display: flex;
+                    align-items: center;
+                    padding-bottom: .8rem;
+                    font-size: 2rem;
+                }
+
+                &_img {
+                    width: 3rem;
+                    height: 3rem;
+                    margin-right: .6rem;
+                    border-radius: 10%;
+                    border: .1rem solid $color-primary;
+                }
+            }
+        }
+    }
+
+
+    .portfolio {
+        margin-bottom: 7rem;
+        
+        &_title {
+            color: $color-white;
+            margin-bottom: 2rem;
+
+            & span {
+                border-bottom: .8rem solid $color-primary-dark;
+            }
+        }
+    }
+}

@@ -1,0 +1,95 @@
+.header {
+    height: 100vh;
+    // background-image: linear-gradient(to bottom, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8));
+    background-size: cover;
+    background-position: top;
+
+    // clip-path: polygon(0% 0%, 100% 0, 100% 70%, 50% 100%, 0 70%);
+
+    &_container {
+        padding: 1rem 10%;
+    }
+
+    &_nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        & ul li {
+            display: inline-block;
+            list-style: none;
+            margin: 1rem 2rem;
+        }
+
+        & ul li a {
+            color: $color-white;
+            text-decoration: none;
+            position: relative;
+        }
+
+        & ul li a::after {
+            content: '';
+            width: 0;
+            height: 3px;
+            background: $color-primary;
+            position: absolute;
+            left: 0;
+            bottom: -6px;
+            transition: 0.5s;
+        }
+
+        & ul li a:hover::after {
+            width: 100%;
+        }
+    }
+
+    &_logo {
+        height: 50px;
+        color: $color-white;
+        font-size: 2.5rem;
+        font-weight: 900;
+        letter-spacing: .5rem;
+        text-transform: uppercase;
+    }
+
+    &_text-box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 10%;
+        margin-top: 10rem;
+    }
+
+    &_image img{
+        border-radius: 50%;
+        width: 40rem;
+        border: .8rem solid $color-primary;
+    }
+}
+
+.heading-primary {
+    color: $color-white;
+    backface-visibility: hidden;
+
+    &-main {
+        display: flex;
+        font-size: 6rem;
+        font-weight: 900;
+        color: $color-primary;
+        letter-spacing: 1.5rem;
+        text-transform: uppercase;
+    
+        animation-name: moveInLeft;
+        animation-duration: 2s;
+        animation-timing-function: ease-out;
+    }
+    
+    &-sub {
+        display: block;
+        font-size: 2.5rem;
+        font-weight: 600;
+        letter-spacing: .7rem;
+        animation: moveInRight 2s ease-out;
+    }
+}
