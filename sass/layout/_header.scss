@@ -40,14 +40,18 @@
         & ul li a:hover::after {
             width: 100%;
         }
+
+        & .fa-solid {
+            display: none;
+        }
     }
 
     &_logo {
-        height: 50px;
+        height: 5rem;
         color: $color-white;
-        font-size: 2.3rem;
+        font-size: 2.4rem;
         font-weight: 900;
-        letter-spacing: .5rem;
+        letter-spacing: .2rem;
         text-transform: uppercase;
     }
 

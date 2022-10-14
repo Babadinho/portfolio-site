@@ -24,6 +24,42 @@
     }
     
         .header {
+            &_logo {
+                font-size: 2rem;
+            }
+
+            &_nav {
+                & ul {
+                    background: #232936f3;
+                    position: fixed;
+                    top: 0;
+                    right: -20rem;
+                    width: 20rem;
+                    height: 100vh;
+                    padding-top: 5rem;
+                    z-index: 2;
+                    transition: right 0.5s;
+
+                    & li {
+                        display: block;
+                        margin: 2.5rem;
+                    }   
+                    
+                    & .fa-solid {
+                        position: absolute;
+                        top: 1.9rem;
+                        left: 2.5rem;
+                        cursor: pointer;
+                    }
+                }
+
+                & .fa-solid {
+                    display: block;
+                    font-size: 2.5rem;
+                    color: $color-white;
+                    cursor: pointer;
+                }
+            }
     
             &::before {
                 font-size: 2.2rem;
@@ -38,7 +74,7 @@
             }
     
             &_image img{
-                width: 30rem;
+                width: 27rem;
                 margin-bottom: 2rem;
             }
     
@@ -64,7 +100,7 @@
             &:link,
             &:visited {
                 padding: 0.7rem 2rem;
-                font-size: 1.5rem;
+                font-size: 1.4rem;
             }
         }
 }
@@ -75,6 +111,42 @@
 }
 
     .header {
+        &_logo {
+            font-size: 2rem;
+        }
+
+        &_nav {
+            & ul {
+                background: #232936f3;
+                position: fixed;
+                top: 0;
+                right: -20rem;
+                width: 20rem;
+                height: 100vh;
+                padding-top: 5rem;
+                z-index: 2;
+                transition: right 0.5s;
+
+                & li {
+                    display: block;
+                    margin: 2.5rem;
+                }   
+                
+                & .fa-solid {
+                    position: absolute;
+                    top: 1.9rem;
+                    left: 2.5rem;
+                    cursor: pointer;
+                }
+            }
+
+            & .fa-solid {
+                display: block;
+                font-size: 2.5rem;
+                color: $color-white;
+                cursor: pointer;
+            }
+        }
 
         &::before {
             font-size: 2.2rem;
@@ -122,6 +194,43 @@
 
 @media (max-width: 400px) {
         .header {
+            &_logo {
+                font-size: 2rem;
+            }
+
+            &_nav {
+                & ul {
+                    background: #232936f3;
+                    position: fixed;
+                    top: 0;
+                    right: -20rem;
+                    width: 20rem;
+                    height: 100vh;
+                    padding-top: 5rem;
+                    z-index: 2;
+                    transition: right 0.5s;
+
+                    & li {
+                        display: block;
+                        margin: 2.5rem;
+                    }   
+                    
+                    & .fa-solid {
+                        position: absolute;
+                        top: 1.9rem;
+                        left: 2.5rem;
+                        cursor: pointer;
+                    }
+                }
+
+                & .fa-solid {
+                    display: block;
+                    font-size: 2.5rem;
+                    color: $color-white;
+                    cursor: pointer;
+                }
+            }
+            
             &::before {
                 font-size: 2rem;
                 bottom: 4rem;

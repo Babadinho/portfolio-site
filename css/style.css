@@ -140,12 +140,14 @@ button {
       transition: 0.5s; }
     .header_nav ul li a:hover::after {
       width: 100%; }
+    .header_nav .fa-solid {
+      display: none; }
   .header_logo {
-    height: 50px;
+    height: 5rem;
     color: #eee;
-    font-size: 2.3rem;
+    font-size: 2.4rem;
     font-weight: 900;
-    letter-spacing: .5rem;
+    letter-spacing: .2rem;
     text-transform: uppercase; }
   .header_text-box {
     display: flex;
@@ -390,6 +392,31 @@ button {
 @media (max-width: 700px) {
   .container {
     padding: 1rem 5%; }
+  .header_logo {
+    font-size: 2rem; }
+  .header_nav ul {
+    background: #232936f3;
+    position: fixed;
+    top: 0;
+    right: -20rem;
+    width: 20rem;
+    height: 100vh;
+    padding-top: 5rem;
+    z-index: 2;
+    transition: right 0.5s; }
+    .header_nav ul li {
+      display: block;
+      margin: 2.5rem; }
+    .header_nav ul .fa-solid {
+      position: absolute;
+      top: 1.9rem;
+      left: 2.5rem;
+      cursor: pointer; }
+  .header_nav .fa-solid {
+    display: block;
+    font-size: 2.5rem;
+    color: #eee;
+    cursor: pointer; }
   .header::before {
     font-size: 2.2rem;
     bottom: 4rem;
@@ -399,7 +426,7 @@ button {
     padding: 1rem 3%;
     margin-top: 4rem; }
   .header_image img {
-    width: 30rem;
+    width: 27rem;
     margin-bottom: 2rem; }
   .header-primary-button {
     justify-content: center; }
@@ -412,11 +439,36 @@ button {
       padding-right: 0; }
   .btn:link, .btn:visited {
     padding: 0.7rem 2rem;
-    font-size: 1.5rem; } }
+    font-size: 1.4rem; } }
 
 @media (max-width: 600px) {
   .container {
     padding: 1rem 5%; }
+  .header_logo {
+    font-size: 2rem; }
+  .header_nav ul {
+    background: #232936f3;
+    position: fixed;
+    top: 0;
+    right: -20rem;
+    width: 20rem;
+    height: 100vh;
+    padding-top: 5rem;
+    z-index: 2;
+    transition: right 0.5s; }
+    .header_nav ul li {
+      display: block;
+      margin: 2.5rem; }
+    .header_nav ul .fa-solid {
+      position: absolute;
+      top: 1.9rem;
+      left: 2.5rem;
+      cursor: pointer; }
+  .header_nav .fa-solid {
+    display: block;
+    font-size: 2.5rem;
+    color: #eee;
+    cursor: pointer; }
   .header::before {
     font-size: 2.2rem;
     bottom: 4rem;
@@ -442,6 +494,31 @@ button {
     font-size: 1.5rem; } }
 
 @media (max-width: 400px) {
+  .header_logo {
+    font-size: 2rem; }
+  .header_nav ul {
+    background: #232936f3;
+    position: fixed;
+    top: 0;
+    right: -20rem;
+    width: 20rem;
+    height: 100vh;
+    padding-top: 5rem;
+    z-index: 2;
+    transition: right 0.5s; }
+    .header_nav ul li {
+      display: block;
+      margin: 2.5rem; }
+    .header_nav ul .fa-solid {
+      position: absolute;
+      top: 1.9rem;
+      left: 2.5rem;
+      cursor: pointer; }
+  .header_nav .fa-solid {
+    display: block;
+    font-size: 2.5rem;
+    color: #eee;
+    cursor: pointer; }
   .header::before {
     font-size: 2rem;
     bottom: 4rem;
