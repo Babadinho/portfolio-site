@@ -1,0 +1,162 @@
+@media (max-width: 900px) {
+    .header {
+        &_image img{
+            width: 25rem;
+            margin-bottom: 2rem;
+        }
+    }
+
+    .heading-primary {
+        &-main {
+            font-size: 2.3rem;
+        }
+
+        &-sub {
+            font-size: 1.3rem;
+            padding-right: 0;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .container {
+        padding: 1rem 5%;
+    }
+    
+        .header {
+    
+            &::before {
+                font-size: 2.2rem;
+                bottom: 4rem;
+                height: 3rem;
+            }
+    
+            &_text-box {
+                flex-direction: column-reverse;
+                padding: 1rem 3%;
+                margin-top: 4rem;
+            }
+    
+            &_image img{
+                width: 30rem;
+                margin-bottom: 2rem;
+            }
+    
+            &-primary-button {
+                justify-content: center;
+            }
+        }
+    
+        .heading-primary {
+            text-align: center;
+    
+            &-main {
+                font-size: 1.9rem;
+            }
+    
+            &-sub {
+                font-size: 1.4rem;
+                padding-right: 0;
+            }
+        }
+    
+        .btn {
+            &:link,
+            &:visited {
+                padding: 0.7rem 2rem;
+                font-size: 1.5rem;
+            }
+        }
+}
+
+@media (max-width: 600px) {
+.container {
+    padding: 1rem 5%;
+}
+
+    .header {
+
+        &::before {
+            font-size: 2.2rem;
+            bottom: 4rem;
+            height: 3rem;
+        }
+
+        &_text-box {
+            flex-direction: column-reverse;
+            padding: 1rem 3%;
+            margin-top: 4rem;
+        }
+
+        &_image img{
+            width: 20rem;
+            margin-bottom: 2rem;
+        }
+
+        &-primary-button {
+            justify-content: center;
+        }
+    }
+
+    .heading-primary {
+        text-align: center;
+
+        &-main {
+            font-size: 1.9rem;
+        }
+
+        &-sub {
+            font-size: 1.4rem;
+            padding-right: 0;
+        }
+    }
+
+    .btn {
+        &:link,
+        &:visited {
+            padding: 0.7rem 2rem;
+            font-size: 1.5rem;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+        .header {
+            &::before {
+                font-size: 2rem;
+                bottom: 4rem;
+                height: 3rem;
+            }
+
+            &_text-box {
+                padding: 1rem 5%;
+                margin-top: 3rem;
+            }
+    
+            &_image img{
+                width: 18rem;
+            }
+        }
+    
+        .heading-primary {
+            text-align: center;
+    
+            &-main {
+                font-size: 1.9rem;
+                letter-spacing: .4rem;
+            }
+    
+            &-sub {
+                font-size: 1.4rem;
+                padding-right: 0;
+            }
+        }
+    
+        .btn {
+            &:link,
+            &:visited {
+                padding: 0.6rem 1.9rem;
+                font-size: 1.4rem;
+            }
+        }
+}

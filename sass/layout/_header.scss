@@ -1,12 +1,9 @@
 .header {
     height: 100vh;
-    background-image: linear-gradient(to bottom, rgba($color-primary-light, 0.2), rgba($color-primary-dark, 0.2));
+    background-image: linear-gradient(to bottom, rgba($color-primary-light, 0.2), rgba($color-primary-dark, 0));
     background-size: cover;
     background-position: top;
     margin-bottom: 10rem;
-
-    clip-path: polygon(0% 0%, 100% 0, 100% 70%, 50% 100%, 0 70%);
-
 
     &_nav {
         padding: 1rem 10%;
@@ -19,12 +16,12 @@
         & ul li {
             display: inline-block;
             list-style: none;
-            margin: 1rem 2rem;
+            margin: 1rem 1.8rem;
         }
 
         & ul li a {
             color: $color-white;
-            font-size: 1.8rem;
+            font-size: 1.7rem;
             text-decoration: none;
             position: relative;
         }
@@ -48,7 +45,7 @@
     &_logo {
         height: 50px;
         color: $color-white;
-        font-size: 2.5rem;
+        font-size: 2.3rem;
         font-weight: 900;
         letter-spacing: .5rem;
         text-transform: uppercase;
@@ -59,12 +56,12 @@
         align-items: center;
         justify-content: space-between;
         padding: 1rem 10%;
-        margin-top: 5rem;
+        margin-top: 10rem;
     }
 
     &_image img{
         border-radius: 50%;
-        width: 39rem;
+        width: 36rem;
         border: .8rem solid $color-primary;
         animation-name: moveInImage;
         animation-duration: 2s;
@@ -98,6 +95,14 @@
           transform: translateY(-50%);
         }
       }
+
+      &-primary-button {
+        display: flex;
+
+        & .first {
+            margin-right: 1.1rem;
+        }
+    }
 }
 
 .heading-primary {
@@ -105,11 +110,10 @@ color: $color-white;
 backface-visibility: hidden;
 
     &-main {
-        display: flex;
-        font-size: 4rem;
+        font-size: 3.6rem;
         font-weight: 900;
         color: $color-primary;
-        letter-spacing: .5rem;
+        letter-spacing: .4rem;
         text-transform: uppercase;
 
         animation-name: moveInLeft;
@@ -119,7 +123,7 @@ backface-visibility: hidden;
 
     &-sub {
         display: block;
-        font-size: 2rem;
+        font-size: 1.7rem;
         font-weight: 500;
         padding-right: 3rem;
         letter-spacing: .15rem;
