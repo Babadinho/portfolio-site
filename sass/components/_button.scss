@@ -52,3 +52,24 @@
         animation-fill-mode: backwards;
     }
 }
+
+button {
+    text-transform: capitalize;
+    text-decoration: none;
+    padding: 1.2rem 4rem;
+    font-size: 1.7rem;
+    background: $color-primary-dark;
+    cursor: pointer;
+    border-radius: .6rem;
+    transition: all .5s;
+    color: $color-white;
+
+    &:hover {
+        transform: translateY(-.3rem);
+
+        &::after {
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+        }
+    }
+}
