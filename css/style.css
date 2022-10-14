@@ -10,7 +10,7 @@ html {
   font-size: 62.5%; }
 
 body {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 1.7;
@@ -96,7 +96,8 @@ button {
   text-decoration: none;
   padding: 1.2rem 4rem;
   font-size: 1.7rem;
-  background: #25a57b;
+  background: #55c57a;
+  border: #55c57a;
   cursor: pointer;
   border-radius: .6rem;
   transition: all .5s;
@@ -114,7 +115,7 @@ button {
   background-position: top;
   margin-bottom: 10rem; }
   .header_nav {
-    padding: 1rem 10%;
+    padding: .6rem 10%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -125,8 +126,9 @@ button {
       list-style: none;
       margin: 1rem 1.8rem; }
     .header_nav ul li a {
+      font-family: 'Passero One', cursive;
       color: #eee;
-      font-size: 1.7rem;
+      font-size: 2rem;
       text-decoration: none;
       position: relative; }
     .header_nav ul li a::after {
@@ -142,10 +144,12 @@ button {
       width: 100%; }
     .header_nav .fa-solid {
       display: none; }
-  .header_logo {
+  .header_logo a {
+    font-family: 'Passero One', cursive;
     height: 5rem;
+    text-decoration: none;
     color: #eee;
-    font-size: 2.4rem;
+    font-size: 2.6rem;
     font-weight: 900;
     letter-spacing: .2rem;
     text-transform: uppercase; }
@@ -193,6 +197,7 @@ button {
   color: #eee;
   backface-visibility: hidden; }
   .heading-primary-main {
+    font-family: 'Passero One', cursive;
     font-size: 3.6rem;
     font-weight: 900;
     color: #55c57a;
@@ -214,13 +219,14 @@ button {
   .container .skills {
     margin-bottom: 15rem; }
     .container .skills_title {
+      font-family: 'Passero One', cursive;
       color: #eee;
       margin-bottom: 3rem;
-      font-size: 2.5rem;
+      font-size: 2.8rem;
       font-weight: 900;
       letter-spacing: .2rem; }
-      .container .skills_title span {
-        border-bottom: 0.6rem solid #55c57a; }
+      .container .skills_title span i {
+        color: #55c57a; }
     .container .skills_list {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -280,13 +286,14 @@ button {
   .container .portfolio {
     margin-bottom: 10rem; }
     .container .portfolio_title {
+      font-family: 'Passero One', cursive;
       color: #eee;
       margin-bottom: 3rem;
-      font-size: 2.5rem;
+      font-size: 2.8rem;
       font-weight: 900;
       letter-spacing: .2rem; }
-      .container .portfolio_title span {
-        border-bottom: 0.6rem solid #55c57a; }
+      .container .portfolio_title span i {
+        color: #55c57a; }
     .container .portfolio_list {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -342,18 +349,20 @@ button {
         .container .portfolio_list_item:hover .portfolio_list_item_layer {
           height: 100%; }
   .container .contact {
-    margin: 13rem; }
+    margin-bottom: 10rem; }
     .container .contact_title {
+      font-family: 'Passero One', cursive;
       color: #eee;
       margin-bottom: 3rem;
-      font-size: 2.5rem;
+      font-size: 2.8rem;
       font-weight: 900;
       letter-spacing: .2rem;
       text-align: center; }
-      .container .contact_title span {
-        border-bottom: 0.6rem solid #55c57a; }
+      .container .contact_title span i {
+        color: #55c57a; }
     .container .contact_form form {
-      width: 100%; }
+      width: 80%;
+      margin: auto; }
       .container .contact_form form input, .container .contact_form form textarea {
         width: 100%;
         border: 0;
@@ -392,8 +401,8 @@ button {
 @media (max-width: 700px) {
   .container {
     padding: 1rem 5%; }
-  .header_logo {
-    font-size: 2rem; }
+  .header_logo a {
+    font-size: 2.3rem; }
   .header_nav ul {
     background: #232936f3;
     position: fixed;
@@ -424,7 +433,7 @@ button {
   .header_text-box {
     flex-direction: column-reverse;
     padding: 1rem 3%;
-    margin-top: 4rem; }
+    margin-top: 5rem; }
   .header_image img {
     width: 27rem;
     margin-bottom: 2rem; }
@@ -439,13 +448,15 @@ button {
       padding-right: 0; }
   .btn:link, .btn:visited {
     padding: 0.7rem 2rem;
-    font-size: 1.4rem; } }
+    font-size: 1.4rem; }
+  .contact_form form {
+    width: 100% !important; } }
 
 @media (max-width: 600px) {
   .container {
     padding: 1rem 5%; }
-  .header_logo {
-    font-size: 2rem; }
+  .header_logo a {
+    font-size: 2.3rem; }
   .header_nav ul {
     background: #232936f3;
     position: fixed;
@@ -476,7 +487,7 @@ button {
   .header_text-box {
     flex-direction: column-reverse;
     padding: 1rem 3%;
-    margin-top: 4rem; }
+    margin-top: 8rem; }
   .header_image img {
     width: 20rem;
     margin-bottom: 2rem; }
@@ -491,11 +502,14 @@ button {
       padding-right: 0; }
   .btn:link, .btn:visited {
     padding: 0.7rem 2rem;
-    font-size: 1.5rem; } }
+    font-size: 1.5rem; }
+  .contact_form form {
+    width: 100% !important;
+    text-align: center; } }
 
 @media (max-width: 400px) {
-  .header_logo {
-    font-size: 2rem; }
+  .header_logo a {
+    font-size: 2.3rem; }
   .header_nav ul {
     background: #232936f3;
     position: fixed;
@@ -525,7 +539,7 @@ button {
     height: 3rem; }
   .header_text-box {
     padding: 1rem 5%;
-    margin-top: 3rem; }
+    margin-top: 4rem; }
   .header_image img {
     width: 18rem; }
   .heading-primary {
@@ -538,4 +552,7 @@ button {
       padding-right: 0; }
   .btn:link, .btn:visited {
     padding: 0.6rem 1.9rem;
-    font-size: 1.4rem; } }
+    font-size: 1.4rem; }
+  .contact_form form {
+    width: 100% !important;
+    text-align: center; } }

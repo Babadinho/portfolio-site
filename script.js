@@ -12,6 +12,6 @@ const close_menu = () => {
 
 for (let i = 0; i < side_menu_list.length; i++) {
   side_menu_list[i].addEventListener('click', () => {
-    side_menu.style.right = '-250px';
+    side_menu.style.right = '-200px';
   });
 }
