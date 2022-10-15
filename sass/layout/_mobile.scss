@@ -86,7 +86,8 @@
         text-align: center;
 
         &-main {
-            font-size: 1.9rem;
+            font-size: 2rem;
+            letter-spacing: .4rem;
         }
 
         &-sub {
@@ -228,24 +229,10 @@
         }
     }
 
-    .heading-primary {
-        text-align: center;
-
-        &-main {
-            font-size: 1.9rem;
-            letter-spacing: .4rem;
-        }
-
-        &-sub {
-            font-size: 1.6rem;
-            padding-right: 0;
-        }
-    }
-
     .btn {
         &:link,
         &:visited {
-            padding: 0.6rem 1.9rem;
+            padding: 0.7rem 1.9rem;
             font-size: 1.4rem;
         }
     }
