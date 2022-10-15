@@ -248,7 +248,7 @@
     }
 }
 
-@media (orientation: landscape) and (hover: none) and (pointer: coarse) {
+@media screen and (orientation:landscape) {
     .header {
 
         &::before {

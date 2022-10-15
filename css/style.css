@@ -591,7 +591,7 @@ button {
     padding: 0.7rem 1.9rem;
     font-size: 1.4rem; } }
 
-@media (orientation: landscape) and (hover: none) and (pointer: coarse) {
+@media screen and (orientation: landscape) {
   .header::before {
     display: none; }
   .header_text-box {
