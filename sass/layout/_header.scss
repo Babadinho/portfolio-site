@@ -4,6 +4,7 @@
     background-size: cover;
     background-position: top;
     margin-bottom: 13rem;
+    position: relative;
 
     &_nav {
         padding: .5rem 10%;
@@ -63,7 +64,11 @@
         align-items: center;
         justify-content: space-between;
         padding: 1rem 10%;
-        margin-top: 10rem;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
     }
 
     &_image img{
