@@ -487,7 +487,7 @@ button {
     height: 3rem; }
   .header_text-box {
     flex-direction: column-reverse;
-    top: 50%; }
+    top: 40%; }
   .header_image img {
     width: 27rem;
     margin-bottom: 2rem; }
@@ -542,7 +542,7 @@ button {
     height: 3rem; }
   .header_text-box {
     flex-direction: column-reverse;
-    top: 50%; }
+    top: 40%; }
   .header_image img {
     width: 20rem;
     margin-bottom: 2rem; }
@@ -595,7 +595,7 @@ button {
     bottom: 4rem;
     height: 3rem; }
   .header_text-box {
-    top: 50%; }
+    top: 40%; }
   .header_image img {
     width: 18rem; }
   .heading-primary {
