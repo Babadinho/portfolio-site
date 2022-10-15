@@ -591,8 +591,11 @@ button {
     padding: 0.7rem 1.9rem;
     font-size: 1.4rem; } }
 
-@media screen and (orientation: landscape) {
+@media (orientation: landscape) and (hover: none) {
   .header::before {
     display: none; }
   .header_text-box {
-    top: 65%; } }
+    top: 65%; }
+  .header_image img {
+    width: 25rem;
+    margin-bottom: 2rem; } }
