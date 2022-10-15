@@ -8,11 +8,11 @@
 
     .heading-primary {
         &-main {
-            font-size: 2.3rem;
+            font-size: 2.6rem;
         }
 
         &-sub {
-            font-size: 1.3rem;
+            font-size: 1.7rem;
             padding-right: 0;
         }
     }
@@ -109,6 +109,12 @@
     
         & form {
             width: 100% !important;
+        }
+    }
+
+    .skills_list_items {
+        &_div span {
+            font-size: 1.6rem;
         }
     }
 }

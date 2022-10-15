@@ -448,9 +448,9 @@ button {
     width: 25rem;
     margin-bottom: 2rem; }
   .heading-primary-main {
-    font-size: 2.3rem; }
+    font-size: 2.6rem; }
   .heading-primary-sub {
-    font-size: 1.3rem;
+    font-size: 1.7rem;
     padding-right: 0; } }
 
 @media (max-width: 700px) {
@@ -506,7 +506,9 @@ button {
     padding: 0.7rem 2rem;
     font-size: 1.5rem; }
   .contact_form form {
-    width: 100% !important; } }
+    width: 100% !important; }
+  .skills_list_items_div span {
+    font-size: 1.6rem; } }
 
 @media (max-width: 600px) {
   .container {
