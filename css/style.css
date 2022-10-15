@@ -507,6 +507,8 @@ button {
     font-size: 1.5rem; }
   .contact_form form {
     width: 100% !important; }
+    .contact_form form input::placeholder {
+      font-size: 1.6rem; }
   .skills_list_items_div span {
     font-size: 1.6rem; } }
 
@@ -588,3 +590,9 @@ button {
   .btn:link, .btn:visited {
     padding: 0.7rem 1.9rem;
     font-size: 1.4rem; } }
+
+@media (orientation: landscape) and (hover: none) and (pointer: coarse) {
+  .header::before {
+    display: none; }
+  .header_text-box {
+    top: 65%; } }
