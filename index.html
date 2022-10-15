@@ -8,7 +8,6 @@
         <link href="https://fonts.googleapis.com/css2?family=Passero+One&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-        <link rel="stylesheet" href="css/icon-font.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
         
@@ -34,7 +33,7 @@
             <div class="header_text-box">
                 <div class="heading-primary">
                     <span class="heading-primary-main">Hi, My Name is Donald👋</span>
-                    <span class="heading-primary-sub">I am a Web Developer and SEO Specialist. I am a problem solver who is focused on building useful and interactive web applications.</span>
+                    <span class="heading-primary-sub">I am a Full-Stack Web Developer and SEO Specialist. A problem solver who is focused on building useful and interactive web applications.</span>
                     <div class="header-primary-button">
                         <a href="https://github.com/Babadinho" target="_blank" class="btn btn-white btn-animated first"><i class="fa-brands fa-square-github"></i> Github</a>
                         <a href="https://www.linkedin.com/in/donald-iloekwe" target="_blank" class="btn btn-white btn-animated"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
@@ -152,12 +151,13 @@
                     <div class="contact">
                         <h1 class="contact_title" id="contact"><span><i class="fa-solid fa-address-book"></i> Let's Get in Touch</span></h1>
                             <div class="contact_form">
-                                <form action="">
+                                <form action="" name="submit-to-google-sheet">
                                     <input type="text" name="name" placeholder="Your Name" required>
                                     <input type="email" name="email" placeholder="Your Email" required>
-                                    <textarea name="message" rows="6" placeholder="Your Message"></textarea>
-                                    <button type="submit" class="">Submit</button>
+                                    <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+                                    <button type="submit" id="button" class="">Submit</button>
                                 </form>
+                                <span id="msg"></span>
                             </div>
                     </div>
                 </div>
@@ -169,7 +169,27 @@
                 </div>
             </div>
 
-            <script src="/script.js"></script>
-            <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+            <div class='scrolltop'>
+                <div class='scroll icon'><i class="fa fa-4x fa-angle-up"></i></div>
+            </div>
+            
+        <script src="/script.js"></script>
+        <script src="/contact.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+        <script type="text/javascript">
+            $(window).scroll(function(){
+                var scrolled = $(window).scrollTop();
+                if (scrolled > 200) $('.scrolltop').fadeIn('slow');
+                if (scrolled < 200) $('.scrolltop').fadeOut('slow');
+            });
+                
+            $(function () {
+                $('.scroll').click(function () {
+                    $('html,body').animate({ scrollTop: $('.header').offset().top }, '1000');
+                    return false;
+                });
+            });
+        </script>
     </body>
 </html>

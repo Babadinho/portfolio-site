@@ -99,23 +99,66 @@ button {
   background: #55c57a;
   border: #55c57a;
   cursor: pointer;
-  border-radius: .6rem;
+  border-radius: .5rem;
   transition: all .5s;
   color: #eee; }
   button:hover {
-    transform: translateY(-0.3rem); }
+    transform: translateY(-0.3rem);
+    background: #25a57b; }
     button:hover::after {
       transform: scaleX(1.4) scaleY(1.6);
       opacity: 0; }
+
+::-webkit-scrollbar {
+  width: 1rem; }
+
+::-webkit-scrollbar-track {
+  background-color: #ebebeb;
+  -webkit-border-radius: .5rem;
+  border-radius: 10px; }
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: .5rem;
+  border-radius: .5rem;
+  background: #55c57a; }
+
+.scrolltop {
+  display: none;
+  margin: 0 auto;
+  position: fixed;
+  bottom: 5rem;
+  right: 1.8rem; }
+  .scrolltop .scroll {
+    border-radius: 0.2rem;
+    color: #eee;
+    background: #25a57b;
+    opacity: 0.8;
+    padding: 1rem 1.2rem 0.8rem 1.2rem;
+    text-align: center;
+    margin: 0 0 0 0;
+    cursor: pointer;
+    transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s; }
+  .scrolltop .scroll:hover {
+    transition: all .4s linear;
+    transform: scale(1.1); }
+  .scrolltop .scroll .fa {
+    font-size: 2.5rem;
+    transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s; }
 
 .header {
   height: 100vh;
   background-image: linear-gradient(to bottom, rgba(126, 213, 111, 0.2), rgba(37, 165, 123, 0));
   background-size: cover;
   background-position: top;
-  margin-bottom: 10rem; }
+  margin-bottom: 13rem; }
   .header_nav {
-    padding: .6rem 10%;
+    padding: .5rem 10%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -128,7 +171,7 @@ button {
     .header_nav ul li a {
       font-family: 'Passero One', cursive;
       color: #eee;
-      font-size: 2rem;
+      font-size: 2.1rem;
       text-decoration: none;
       position: relative; }
     .header_nav ul li a::after {
@@ -217,7 +260,7 @@ button {
 .container {
   padding: 1rem 10%; }
   .container .skills {
-    margin-bottom: 15rem; }
+    margin-bottom: 12rem; }
     .container .skills_title {
       font-family: 'Passero One', cursive;
       color: #eee;
@@ -284,7 +327,7 @@ button {
           border-radius: 10%;
           border: 0.1rem solid #55c57a; }
   .container .portfolio {
-    margin-bottom: 10rem; }
+    margin-bottom: 12rem; }
     .container .portfolio_title {
       font-family: 'Passero One', cursive;
       color: #eee;
@@ -373,6 +416,13 @@ button {
         color: #eee;
         font-size: 1.8rem;
         border-radius: .6rem; }
+    .container .contact #msg {
+      width: 80%;
+      margin: auto;
+      padding-top: 2rem;
+      text-align: center;
+      color: #25a57b;
+      display: block; }
 
 .copyright {
   width: 100%;
@@ -457,29 +507,31 @@ button {
     padding: 1rem 5%; }
   .header_logo a {
     font-size: 2.3rem; }
-  .header_nav ul {
-    background: #232936f3;
-    position: fixed;
-    top: 0;
-    right: -20rem;
-    width: 20rem;
-    height: 100vh;
-    padding-top: 5rem;
-    z-index: 2;
-    transition: right 0.5s; }
-    .header_nav ul li {
+  .header_nav {
+    padding: 0.7rem 10% !important; }
+    .header_nav ul {
+      background: #232936f3;
+      position: fixed;
+      top: 0;
+      right: -20rem;
+      width: 20rem;
+      height: 100vh;
+      padding-top: 5rem;
+      z-index: 2;
+      transition: right 0.5s; }
+      .header_nav ul li {
+        display: block;
+        margin: 2.5rem; }
+      .header_nav ul .fa-solid {
+        position: absolute;
+        top: 1.9rem;
+        left: 2.5rem;
+        cursor: pointer; }
+    .header_nav .fa-solid {
       display: block;
-      margin: 2.5rem; }
-    .header_nav ul .fa-solid {
-      position: absolute;
-      top: 1.9rem;
-      left: 2.5rem;
+      font-size: 2.5rem;
+      color: #eee;
       cursor: pointer; }
-  .header_nav .fa-solid {
-    display: block;
-    font-size: 2.5rem;
-    color: #eee;
-    cursor: pointer; }
   .header::before {
     font-size: 2.2rem;
     bottom: 4rem;
@@ -510,29 +562,31 @@ button {
 @media (max-width: 400px) {
   .header_logo a {
     font-size: 2.3rem; }
-  .header_nav ul {
-    background: #232936f3;
-    position: fixed;
-    top: 0;
-    right: -20rem;
-    width: 20rem;
-    height: 100vh;
-    padding-top: 5rem;
-    z-index: 2;
-    transition: right 0.5s; }
-    .header_nav ul li {
+  .header_nav {
+    padding: 0.5rem 10% !important; }
+    .header_nav ul {
+      background: #232936f3;
+      position: fixed;
+      top: 0;
+      right: -20rem;
+      width: 20rem;
+      height: 100vh;
+      padding-top: 5rem;
+      z-index: 2;
+      transition: right 0.5s; }
+      .header_nav ul li {
+        display: block;
+        margin: 2.5rem; }
+      .header_nav ul .fa-solid {
+        position: absolute;
+        top: 1.9rem;
+        left: 2.5rem;
+        cursor: pointer; }
+    .header_nav .fa-solid {
       display: block;
-      margin: 2.5rem; }
-    .header_nav ul .fa-solid {
-      position: absolute;
-      top: 1.9rem;
-      left: 2.5rem;
+      font-size: 2.5rem;
+      color: #eee;
       cursor: pointer; }
-  .header_nav .fa-solid {
-    display: block;
-    font-size: 2.5rem;
-    color: #eee;
-    cursor: pointer; }
   .header::before {
     font-size: 2rem;
     bottom: 4rem;

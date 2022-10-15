@@ -1,5 +1,4 @@
 let side_menu = document.getElementById('side_menu');
-
 let side_menu_list = document.querySelectorAll('.side_menu')[0].children;
 
 const open_menu = () => {

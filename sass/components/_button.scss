@@ -60,12 +60,13 @@ button {
     background: $color-primary;
     border: $color-primary;;
     cursor: pointer;
-    border-radius: .6rem;
+    border-radius: .5rem;
     transition: all .5s;
     color: $color-white;
 
     &:hover {
         transform: translateY(-.3rem);
+        background: $color-primary-dark;
 
         &::after {
             transform: scaleX(1.4) scaleY(1.6);
