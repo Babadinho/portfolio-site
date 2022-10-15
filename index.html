@@ -21,9 +21,9 @@
                         <span class="header_logo"><a href="">Donald I.</a></span>
                     </div>
                     <ul id="side_menu" class="side_menu">
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#skills" class="scrollTo">Skills</a></li>
+                        <li><a href="#portfolio" class="scrollTo">Portfolio</a></li>
+                        <li><a href="#contact" class="scrollTo">Contact</a></li>
                         <i class="fa-solid fa-xmark" onclick="close_menu()"></i>
                     </ul>
                     <i class="fa-solid fa-bars"onclick="open_menu()"></i>
@@ -189,6 +189,13 @@
                     $('html,body').animate({ scrollTop: $('.header').offset().top }, '1000');
                     return false;
                 });
+            });
+
+            $('.scrollTo').click(function(){
+                $('html, body').animate({
+                    scrollTop: $( $(this).attr('href') ).offset().top
+                }, 500);
+                return false;
             });
         </script>
     </body>
