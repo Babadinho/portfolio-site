@@ -259,7 +259,7 @@ button {
   .header .ball {
     width: 14px;
     height: 14px;
-    top: 0.5px;
+    top: 0.8px;
     left: 0.19rem; }
   .header .checkbox:checked + .label .ball {
     transform: translateX(1.7rem); }
