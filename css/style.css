@@ -348,6 +348,9 @@ button {
     position: absolute;
     text-align: center;
     width: 6rem; }
+    .header .pointer .pointer:focus {
+      outline: none !important;
+      box-shadow: none; }
 
 @keyframes bounce {
   50% {
