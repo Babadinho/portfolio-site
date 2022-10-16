@@ -539,7 +539,7 @@ button {
         font-size: 1.8rem;
         border-radius: .6rem; }
         .container .contact_form form input::placeholder, .container .contact_form form textarea::placeholder {
-          font-size: 1.72rem; }
+          font-size: 1.6rem; }
     .container .contact #msg {
       width: 80%;
       margin: auto;
@@ -627,7 +627,7 @@ button {
   .contact_form form {
     width: 100% !important; }
     .contact_form form input::placeholder {
-      font-size: 1.5rem; }
+      font-size: 1.5 !important; }
   .skills_list_items_div span {
     font-size: 1.6rem; } }
 
