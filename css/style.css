@@ -190,7 +190,7 @@ button {
   display: block; }
 
 .body-light {
-  background-color: #f9f9e9; }
+  background-color: #fdfdfc; }
   .body-light .header {
     background-image: linear-gradient(to bottom, rgba(126, 213, 111, 0.25), rgba(37, 165, 123, 0)); }
     .body-light .header .label {
@@ -255,7 +255,7 @@ button {
     color: #2c2b2b; }
   .header .label {
     width: 34px;
-    height: 15px; }
+    height: 16px; }
   .header .ball {
     width: 14px;
     height: 14px;
@@ -264,7 +264,8 @@ button {
   .header .checkbox:checked + .label .ball {
     transform: translateX(1.7rem); }
   .header .label i {
-    font-size: 1.2rem; } }
+    font-size: 1.1rem;
+    padding-top: 0.6px; } }
 
 .header {
   height: 100vh;
