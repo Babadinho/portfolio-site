@@ -1,4 +1,3 @@
-@charset "UTF-8";
 *,
 *::after,
 *::before {
@@ -131,7 +130,7 @@ button {
   .scrolltop .scroll {
     border-radius: 0.2rem;
     color: #eee;
-    background: #25a57b;
+    background: #55c57a;
     opacity: 0.8;
     padding: 1rem 1.2rem 0.8rem 1.2rem;
     text-align: center;
@@ -206,7 +205,7 @@ button {
         color: #2c2b2b; }
     .body-light .header .header_image img {
       border: .8rem solid #fdfdfc; }
-    .body-light .header::before {
+    .body-light .header .pointer {
       color: #2c2b2b; }
     .body-light .header .btn-white {
       background-color: #55c57a;
@@ -334,12 +333,12 @@ button {
     transition: transform .7s ease-in-out; }
     .header_image img:hover {
       transform: rotate(360deg); }
-  .header::before {
+  .header .pointer {
     animation: bounce 1s ease infinite;
     bottom: 2rem;
-    color: #fff;
-    content: '╲╱';
     font-size: 3rem;
+    text-decoration: none;
+    color: #fff;
     height: 7rem;
     left: 50%;
     letter-spacing: -1px;
@@ -513,6 +512,12 @@ button {
               text-decoration: none; }
         .container .portfolio_list_item:hover .portfolio_list_item_layer {
           height: 100%; }
+  .container .github-more {
+    margin-top: 6rem;
+    text-align: center; }
+    .container .github-more a {
+      text-decoration: none;
+      color: #fdfdfc; }
   .container .contact {
     margin-bottom: 10rem; }
     .container .contact_title {
@@ -600,7 +605,7 @@ button {
     font-size: 2.5rem;
     color: #eee;
     cursor: pointer; }
-  .header::before {
+  .header .pointer {
     font-size: 2.2rem;
     bottom: 4rem;
     height: 3rem; }
@@ -661,7 +666,7 @@ button {
       font-size: 2.5rem;
       color: #eee;
       cursor: pointer; }
-  .header::before {
+  .header .pointer {
     font-size: 2.2rem;
     bottom: 8rem;
     height: 3rem; }
@@ -702,6 +707,8 @@ button {
       font-size: 2.5rem;
       color: #eee;
       cursor: pointer; }
+  .header .pointer {
+    bottom: 5rem; }
   .header_text-box {
     top: 45%; }
   .header_image img {
@@ -711,7 +718,7 @@ button {
     font-size: 1.4rem; } }
 
 @media (orientation: landscape) and (hover: none) {
-  .header::before {
+  .header .pointer {
     display: none; }
   .header_text-box {
     top: 65%; }

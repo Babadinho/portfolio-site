@@ -61,7 +61,7 @@
             }
         }
 
-        &::before {
+        & .pointer {
             font-size: 2.2rem;
             bottom: 4rem;
             height: 3rem;
@@ -168,7 +168,7 @@
             }
         }
 
-        &::before {
+        & .pointer {
             font-size: 2.2rem;
             bottom: 8rem;
             height: 3rem;
@@ -230,6 +230,10 @@
             }
         }
 
+        & .pointer {
+            bottom: 5rem;
+        }
+
         &_text-box {
             top: 45%;
         }
@@ -252,7 +256,7 @@
 @media (orientation: landscape) and (hover: none) {
     .header {
 
-        &::before {
+        & .pointer {
             display: none;
         }
     

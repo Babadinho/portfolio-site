@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+    <head id="head">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
@@ -14,8 +14,8 @@
         <title>Donald Iloekwe - Portfolio Website</title>
     </head>
     <body class="body" id="body">
-        <header class="header">
-            <div class="header_container">
+        <header class="header" id="header">
+            <div class="header_container" id="header_container">
                 <nav class="header_nav">
                     <div class="header_logo-box">
                         <span class="header_logo"><a href="">Donald I.</a></span>
@@ -152,6 +152,9 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="github-more">
+                            <button type="submit" id="button" class=""><a href="https://github.com/Babadinho?tab=repositories" target="_blank">More on Github</a></button>
+                        </div>
                     </div>
                 </div>
 
@@ -205,8 +208,15 @@
             $('.scrollTo').click(function(){
                 $('html, body').animate({
                     scrollTop: $( $(this).attr('href') ).offset().top
-                }, 500);
+                }, 'slow');
                 return false;
+            });
+
+            //scroll onclick pointer
+            $(".pointer").click(function(e) {
+                e.preventDefault();
+                var aid = $(this).attr("href");
+                $('html,body').animate({scrollTop: $(aid).offset().top},'slow');
             });
         </script>
     </body>

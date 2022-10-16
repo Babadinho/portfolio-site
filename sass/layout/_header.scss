@@ -85,12 +85,12 @@
             }
     }
 
-      &::before {
+    & .pointer {
         animation: bounce 1s ease infinite;
         bottom: 2rem;
-        color: #fff;
-        content: '╲╱';
         font-size: 3rem;
+        text-decoration: none;
+        color: #fff;
         height: 7rem;
         left: 50%;
         letter-spacing: -1px;
@@ -100,7 +100,7 @@
         position: absolute;
         text-align: center;
         width: 6rem;
-      }
+    }
       
       @keyframes bounce {
         50% {
