@@ -215,6 +215,8 @@
             //scroll onclick pointer
             $(".pointer").click(function(e) {
                 e.preventDefault();
+                $(this).css("box-shadow", "none");
+                $(this).css("outline", "none");
                 var aid = $(this).attr("href");
                 $('html,body').animate({scrollTop: $(aid).offset().top},'slow');
             });
