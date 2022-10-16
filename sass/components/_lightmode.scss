@@ -138,7 +138,8 @@
 
             & form {
                 & input, textarea {
-                    background: #d0cdcd;
+                    background: #fdfdfc;
+                    border: 0.05rem solid rgba(153, 153, 153, 0.519);
                     padding: 1.5rem;
                     margin: 1.5rem 0;
                     color: $color-dark;
