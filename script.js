@@ -6,14 +6,23 @@ const open_menu = () => {
 };
 
 const close_menu = () => {
-  side_menu.style.right = '-250px';
+  side_menu.style.right = '-20rem';
 };
 
-for (let i = 0; i < side_menu_list.length; i++) {
-  side_menu_list[i].addEventListener('click', () => {
-    side_menu.style.right = '-200px';
-  });
-}
+// close side menu onclick link
+// for (let i = 0; i < side_menu_list.length; i++) {
+//   console.log(side_menu_list[i]);
+//   side_menu_list[i].addEventListener('click', () => {
+//     side_menu.style.right = '-20rem !important';
+//   });
+// }
+
+// close side menu on click outside
+window.addEventListener('mouseup', function (e) {
+  if (e.target != side_menu && e.target.parentNode != side_menu) {
+    side_menu.style.right = '-20rem';
+  }
+});
 
 // light mode and save to local storage
 window.onload = function () {
@@ -21,7 +30,7 @@ window.onload = function () {
     document.body.classList.toggle('body-light');
     document.getElementById('checkbox').checked = true;
   } else {
-    document.body.classList.toggle('');
+    document.body.classList.toggle('body');
   }
 };
 document.getElementById('checkbox').addEventListener('change', () => {
