@@ -13,13 +13,21 @@
         
         <title>Donald Iloekwe - Portfolio Website</title>
     </head>
-    <body>
+    <body class="body" id="body">
         <header class="header">
             <div class="header_container">
                 <nav class="header_nav">
                     <div class="header_logo-box">
                         <span class="header_logo"><a href="">Donald I.</a></span>
                     </div>
+                    <div class="dl-toggle">
+                        <input type="checkbox" class="checkbox" id="checkbox">
+                            <label for="checkbox" class="label">
+                                <i class="fa-solid fa-moon"></i>
+                                <i class="fa-solid fa-sun"></i>
+                                <div class='ball'></div>
+                            </label>
+                        </div>
                     <ul id="side_menu" class="side_menu">
                         <li><a href="#skills" class="scrollTo">Skills</a></li>
                         <li><a href="#portfolio" class="scrollTo">Portfolio</a></li>
@@ -177,6 +185,8 @@
         <script src="/contact.js"></script>
         <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 
+        <!-- Jquery codes -->
+        <!-- scroll to top -->
         <script type="text/javascript">
             $(window).scroll(function(){
                 var scrolled = $(window).scrollTop();
@@ -191,6 +201,7 @@
                 });
             });
 
+            // scroll to section #id
             $('.scrollTo').click(function(){
                 $('html, body').animate({
                     scrollTop: $( $(this).attr('href') ).offset().top
