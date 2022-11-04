@@ -331,8 +331,6 @@ button {
     animation-duration: 2s;
     animation-timing-function: ease-out;
     transition: transform .7s ease-in-out; }
-    .header_image img:hover {
-      transform: rotate(360deg); }
   .header .pointer {
     animation: bounce 1s ease infinite;
     bottom: 2rem;
@@ -374,7 +372,7 @@ button {
     animation-timing-function: ease-out; }
   .heading-primary-sub {
     display: block;
-    font-size: 1.7rem;
+    font-size: 1.9rem;
     font-weight: 500;
     padding-right: 3rem;
     letter-spacing: .15rem;
@@ -570,14 +568,23 @@ button {
     font-size: 1.5rem; }
 
 @media (max-width: 900px) {
+  .header_image {
+    display: none; }
   .header_image img {
     width: 25rem;
     margin-bottom: 2rem; }
-  .heading-primary-main {
-    font-size: 2.6rem; }
-  .heading-primary-sub {
-    font-size: 1.7rem;
-    padding-right: 0; } }
+  .heading-primary {
+    display: flex;
+    flex-direction: column;
+    align-items: center !important;
+    justify-content: center !important; }
+    .heading-primary-main {
+      font-size: 2.9rem !important; }
+    .heading-primary-sub {
+      font-size: 1.8rem !important;
+      padding-right: 0 !important;
+      margin-bottom: 1.5rem !important;
+      text-align: justify; } }
 
 @media (max-width: 700px) {
   .container {

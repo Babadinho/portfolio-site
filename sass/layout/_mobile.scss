@@ -1,5 +1,8 @@
 @media (max-width: 900px) {
     .header {
+        &_image {
+            display: none;
+        }
         &_image img{
             width: 25rem;
             margin-bottom: 2rem;
@@ -7,13 +10,19 @@
     }
 
     .heading-primary {
+        display: flex;
+        flex-direction: column;
+        align-items: center !important;
+        justify-content: center !important;
         &-main {
-            font-size: 2.6rem;
+            font-size: 2.9rem !important;
         }
 
         &-sub {
-            font-size: 1.7rem;
-            padding-right: 0;
+            font-size: 1.8rem !important;
+            padding-right: 0 !important;
+            margin-bottom: 1.5rem !important;
+            text-align: justify
         }
     }
 }
