@@ -1,11 +1,12 @@
 @media (max-width: 900px) {
-    .header {
-        &_image {
-            display: none;
-        }
+    .header {  
         &_image img{
             width: 25rem;
             margin-bottom: 2rem;
+        }
+        &_text-box {
+            flex-direction: column-reverse;
+            top: 45%;
         }
     }
 
@@ -22,7 +23,7 @@
             font-size: 1.8rem !important;
             padding-right: 0 !important;
             margin-bottom: 1.5rem !important;
-            // text-align: justify;
+            text-align: justify;
         }
     }
 }
@@ -33,6 +34,7 @@
     }
     
     .header {
+       
         &_logo a{
             font-size: 2.3rem;
         }
@@ -201,7 +203,9 @@
 
 @media (max-width: 400px) {
     .header {
-        
+        &_image {
+            display: none;
+        }
         &_logo a{
             font-size: 2.3rem;
         }
@@ -238,12 +242,6 @@
                 color: $color-white;
                 cursor: pointer;
             }
-            
-        }
-        .pointer {
-            font-size: 2.2rem;
-            bottom: 4rem;
-            height: 3rem;
         }
 
         &_text-box {

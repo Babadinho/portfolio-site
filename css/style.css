@@ -568,11 +568,12 @@ button {
     font-size: 1.5rem; }
 
 @media (max-width: 900px) {
-  .header_image {
-    display: none; }
   .header_image img {
     width: 25rem;
     margin-bottom: 2rem; }
+  .header_text-box {
+    flex-direction: column-reverse;
+    top: 45%; }
   .heading-primary {
     display: flex;
     flex-direction: column;
@@ -583,7 +584,8 @@ button {
     .heading-primary-sub {
       font-size: 1.8rem !important;
       padding-right: 0 !important;
-      margin-bottom: 1.5rem !important; } }
+      margin-bottom: 1.5rem !important;
+      text-align: justify; } }
 
 @media (max-width: 700px) {
   .container {
@@ -688,6 +690,8 @@ button {
     justify-content: center; } }
 
 @media (max-width: 400px) {
+  .header_image {
+    display: none; }
   .header_logo a {
     font-size: 2.3rem; }
   .header_nav {
@@ -715,10 +719,6 @@ button {
       font-size: 2.5rem;
       color: #eee;
       cursor: pointer; }
-  .header .pointer {
-    font-size: 2.2rem;
-    bottom: 4rem;
-    height: 3rem; }
   .header_text-box {
     top: 45%; }
   .header_image img {
