@@ -569,7 +569,7 @@ button {
 
 @media (max-width: 900px) {
   .header_image img {
-    width: 25rem;
+    width: 22rem;
     margin-bottom: 2rem; }
   .header_text-box {
     flex-direction: column-reverse;
@@ -623,7 +623,7 @@ button {
     flex-direction: column-reverse;
     top: 45%; }
   .header_image img {
-    width: 27rem;
+    width: 22rem;
     margin-bottom: 2rem; }
   .header-primary-button {
     justify-content: center; }
