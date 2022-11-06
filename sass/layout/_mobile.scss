@@ -135,14 +135,15 @@
 }
 
 @media (max-width: 600px) {
-    &_image {
-        display: none;
-    }
+    
 .container {
     padding: 1rem 5%;
 }
 
     .header {
+        &_image {
+            display: none;
+        }
         &_logo a{
             font-size: 2.3rem;
         }

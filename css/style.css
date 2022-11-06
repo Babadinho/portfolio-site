@@ -647,10 +647,10 @@ button {
     font-size: 1.6rem; } }
 
 @media (max-width: 600px) {
-  _image {
-    display: none; }
   .container {
     padding: 1rem 5%; }
+  .header_image {
+    display: none; }
   .header_logo a {
     font-size: 2.3rem; }
   .header_nav {
