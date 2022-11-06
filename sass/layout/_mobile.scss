@@ -22,7 +22,7 @@
             font-size: 1.8rem !important;
             padding-right: 0 !important;
             margin-bottom: 1.5rem !important;
-            text-align: justify;
+            // text-align: justify;
         }
     }
 }
@@ -201,6 +201,7 @@
 
 @media (max-width: 400px) {
     .header {
+        
         &_logo a{
             font-size: 2.3rem;
         }
@@ -237,6 +238,12 @@
                 color: $color-white;
                 cursor: pointer;
             }
+            
+        }
+        .pointer {
+            font-size: 2.2rem;
+            bottom: 4rem;
+            height: 3rem;
         }
 
         &_text-box {
