@@ -466,7 +466,8 @@ button {
       .container .portfolio_list_item {
         border-radius: 1rem;
         position: relative;
-        overflow: hidden; }
+        overflow: hidden;
+        max-height: 600px; }
         .container .portfolio_list_item:hover img {
           transform: scale(1.1); }
         .container .portfolio_list_item img {
